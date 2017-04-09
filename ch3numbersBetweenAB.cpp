@@ -25,5 +25,5 @@ int main()
   cout << "Inser el Fin" << endl;
   int range_b; cin>>range_b;
   cout<< "Los numeros entre" << range_a << " y " << range_b << "Son;" << endl;
-  between_a_b(range_a+1,range_b);
+  between_a_b(range_a,range_b);
 }
