@@ -4,9 +4,15 @@ using namespace std;
 
 void between_a_b(int range_a , int range_b)
 {
-  if(range_a < range_b)
+  /*Parte agregada para quitar el bug*/
+  if(range_a!=range_b)
   {
     cout<< range_a << " ";
+  }
+  //fin parte agregada
+
+  if(range_a < range_b)
+  {
     between_a_b(range_a+1,range_b);
   }
 }
@@ -19,5 +25,5 @@ int main()
   cout << "Inser el Fin" << endl;
   int range_b; cin>>range_b;
   cout<< "Los numeros entre" << range_a << " y " << range_b << "Son;" << endl;
-  between_a_b(range_a,range_b);
+  between_a_b(range_a+1,range_b);
 }
